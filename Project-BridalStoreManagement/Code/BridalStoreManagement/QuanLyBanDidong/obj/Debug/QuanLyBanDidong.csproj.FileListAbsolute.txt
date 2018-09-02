@@ -1,0 +1,40 @@
+C:\Client\Aptech\QuanLyBanDidong\QuanLyBanDidong\bin\Debug\QuanLyBanDidong.exe
+C:\Client\Aptech\QuanLyBanDidong\QuanLyBanDidong\bin\Debug\QuanLyBanDidong.pdb
+C:\Client\Aptech\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\ResolveAssemblyReference.cache
+C:\Client\Aptech\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.Form1.resources
+C:\Client\Aptech\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.Properties.Resources.resources
+C:\Client\Aptech\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.csproj.GenerateResource.Cache
+C:\Client\Aptech\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.exe
+C:\Client\Aptech\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.pdb
+C:\Client\Aptech\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.ĐangNhap.resources
+C:\Client\Aptech\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.NhanVien.resources
+C:\Users\HOANG-DU\Desktop\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.exe
+C:\Users\HOANG-DU\Desktop\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.pdb
+C:\Users\HOANG-DU\Desktop\QuanLyBanDidong\QuanLyBanDidong\bin\Debug\QuanLyBanDidong.exe
+C:\Users\HOANG-DU\Desktop\QuanLyBanDidong\QuanLyBanDidong\bin\Debug\QuanLyBanDidong.pdb
+C:\Users\HOANG-DU\Desktop\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\HOANG-DU\Desktop\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.Form1.resources
+C:\Users\HOANG-DU\Desktop\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.KhachHang.resources
+C:\Users\HOANG-DU\Desktop\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.NhanVien.resources
+C:\Users\HOANG-DU\Desktop\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.Properties.Resources.resources
+C:\Users\HOANG-DU\Desktop\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.ĐangNhap.resources
+C:\Users\HOANG-DU\Desktop\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.csproj.GenerateResource.Cache
+C:\Users\HOANG-DU\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.exe
+C:\Users\HOANG-DU\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.pdb
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.exe
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.pdb
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\bin\Debug\QuanLyBanDidong.exe
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\bin\Debug\QuanLyBanDidong.pdb
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.DonHang.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.KhachHang.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.NhanVien.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.Properties.Resources.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.ĐangNhap.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.csproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.ChiTietHoaDon.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.HoaDonBanHang.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.SanPham.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.TimKiemDonHang.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.TimKiemSanPham.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\QuanLyBanDidong\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.MainForm.resources

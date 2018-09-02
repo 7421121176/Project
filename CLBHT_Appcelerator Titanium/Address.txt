@@ -1,0 +1,2 @@
+http://www.appcelerator.com/
+http://books.google.com.vn/books?id=7AX1k_vRFhYC&printsec=frontcover&dq=%22Appcelerator+Titanium+Application+Development+by+Example%22&hl=en&sa=X&ei=_j1YVNCwJMWsogTh44LICA&ved=0CBwQ6AEwAA#v=onepage&q=%22Appcelerator%20Titanium%20Application%20Development%20by%20Example%22&f=false

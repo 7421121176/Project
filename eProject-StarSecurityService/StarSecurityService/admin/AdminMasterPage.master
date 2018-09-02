@@ -1,0 +1,173 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<script runat="server">   
+    public void btn_logout(object sender, EventArgs e)
+    {
+        Session.RemoveAll();
+        Response.Redirect("../Home.aspx");
+    }
+    </script>
+<html lang="en">
+	<head>
+	
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		
+
+</script>
+
+  <link rel="stylesheet" href="css/login.css" type="text/css" media="all">
+		
+        <script type="text/javascript" src="js/login.js"></script>
+        <script type="text/javascript" src="js/login1.js"></script>
+
+    
+  
+		
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+		<script type="text/javascript" src="js/jquery-1.6.js" ></script>
+		<script type="text/javascript" src="js/cufon-yui.js"></script>
+		<script type="text/javascript" src="js/cufon-replace.js"></script>  
+		<script type="text/javascript" src="js/Vegur_300.font.js"></script>
+		<script type="text/javascript" src="js/PT_Sans_700.font.js"></script>
+		<script type="text/javascript" src="js/PT_Sans_400.font.js"></script>
+		<script type="text/javascript" src="js/tms-0.3.js"></script>
+		<script type="text/javascript" src="js/tms_presets.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/atooltip.jquery.js"></script>
+		<script type="text/javascript" src="js/tabidload.js"></script>
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/html5.js"></script>
+		<link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
+		<![endif]-->
+		<!--[if lt IE 7]>
+		<![endif]-->	
+	</head>
+	<body id="page1">
+	
+	
+	
+	
+
+	
+	
+	
+	
+		<div class="main">
+<!--header -->
+			<header>
+				<div class="wrapper" runat="server">
+					<h1><a href="AdminHomes.aspx" id="logo">Superior.com</a></h1>
+				    <fieldset style="text-align: right; text-decoration: none;">&nbsp;&nbsp;<a href="ChangeInformation.aspx" id="A3"><input 
+                            id="Button3" type="button" value="Change information" 
+                            style="background-color: #5F870E" /></a>&nbsp;&nbsp; 
+				    <a id="A2" ><input id="Button2" type="button" runat="server" value="Logout" 
+                            onserverclick="btn_logout" style="background-color: #5F870E" /></a></fieldset>
+                    
+                    
+				</div>
+				<nav>
+					<ul id="menu">
+						<li id="menu1"><a href="AdminHomes.aspx"><span>Home</span></a></li>
+						<li id="menu2"><a href="AdminCompany.aspx"><span>Company</span></a></li>
+						<li id="menu3"><a href="AdminCustomer.aspx"><span>Customer</span></a></li>
+						<li id="menu4"><a href="AdminEmployee.aspx"><span>Employee</span></a></li>
+						<li id="menu5"><a href="AdminOrder.aspx"><span>Order</span></a></li>
+						<li id="menu6"><a href="AdminService.aspx"><span>Services</span></a></li>
+						<li id="menu7"><a href="AdminVacancy.aspx"><span>Vacancies</span></a></li>
+						<li id="menu8"><a href="AdminContact.aspx"><span>Contacts</span></a></li>
+						<li id="menu9"><a href="Add.aspx"<span>Add Other</span></a></li>
+					</ul>
+				</nav>
+				<div id="slider">
+					
+						
+							            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        </asp:ContentPlaceHolder>
+        
+						
+					
+				</div>
+			</header>
+<!--header end-->
+<!--content -->
+			<article id="content"><div class="ic"></div>
+				<div class="wrapper" style="text-align: left">
+					<div class="col1 marg_right1">
+						<h2>Consulting</h2>
+						<p></p>
+					</div>
+					<div class="col1 marg_right1">
+						<h2>Analysis</h2>
+						<p></p>
+					</div>
+					<div class="col1 marg_right1">
+						<h2>Strategy</h2>
+						<p></p>
+					</div>
+					<div class="col1">
+						<h2>Services</h2>
+						<ul class="list1">
+							
+						</ul>
+					</div>
+				</div>
+			</article>
+		</div>
+		<div class="bg1">
+			<div class="main">
+				<article id="content2">
+					<div class="wrapper">
+					</div>
+				</article>
+			</div>
+		</div>
+		<div class="main">
+<!--content end-->
+<!--footer -->
+			<footer>
+				<ul id="icons">
+					<li class="first">Follow Us:</li>
+					<li><a href="http://goo.gl/oZ3Beo" class="normaltip" title="Facebook"><img src="images/icon1.jpg" alt=""></a></li>
+				</ul>
+				Design by Group II
+    <br />
+    Copyright © 2014 eProject Start Security Services<br>
+				<!-- {%FOOTER_LINK} -->
+			</footer>
+<!--footer end-->
+		</div>
+		<script type="text/javascript"> Cufon.now(); </script>
+		<script>
+			$(window).load(function(){
+				$('#slider')._TMS({
+					banners:true,
+					waitBannerAnimation:false,
+					preset:'diagonalFade',
+					easing:'easeOutQuad',
+					pagination:true,
+					duration:400,
+					slideshow:8000,
+					bannerShow:function(banner){
+						banner.css({marginRight:-500}).stop().animate({marginRight:0}, 600)
+					},
+					bannerHide:function(banner){
+						banner.stop().animate({marginRight:-500}, 600)
+					}
+					})
+			})
+
+
+			function btnchangepass_onclick() {
+
+			}
+
+        </script>
+       
+	    
+	</body>
+</html>

@@ -1,0 +1,205 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<script runat="server">
+    public void btn_logout(object sender, EventArgs e)
+    {
+        Session.RemoveAll();
+    }
+    
+    </script>
+<html lang="en">
+	<head>
+	
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		
+
+</script>
+   <link rel="stylesheet" href="css/login.css" type="text/css" media="all">
+		
+        <script type="text/javascript" src="js/login.js"></script>
+        <script type="text/javascript" src="js/login1.js"></script>
+		
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+		<script type="text/javascript" src="js/jquery-1.6.js" ></script>
+		<script type="text/javascript" src="js/cufon-yui.js"></script>
+		<script type="text/javascript" src="js/cufon-replace.js"></script>  
+		<script type="text/javascript" src="js/Vegur_300.font.js"></script>
+		<script type="text/javascript" src="js/PT_Sans_700.font.js"></script>
+		<script type="text/javascript" src="js/PT_Sans_400.font.js"></script>
+		<script type="text/javascript" src="js/tms-0.3.js"></script>
+		<script type="text/javascript" src="js/tms_presets.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/atooltip.jquery.js"></script>
+		<script type="text/javascript" src="js/tabidload.js"></script>
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/html5.js"></script>
+		<link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
+		<![endif]-->
+		<!--[if lt IE 7]>
+		<![endif]-->	
+	</head>
+	<body id="page1">
+	
+	
+	
+	
+		<div class="main">
+<!--header -->
+			<header>
+				<div class="wrapper">
+					<h1><a href="Home.aspx" id="logo">Superior.com</a></h1>
+				    <form id="search1"  >
+                     <div id="content1">
+                     <h1 style="text-align: center" href="Log">
+                         <a href="Login.aspx" id="A1"><button id="btnsubmitlogin"  type="button"  runat="server" style="background-color: #5F870E" >
+                             Login</button></a>
+                             
+                     <a href="ChangeInformation.aspx" id="A2"><button id="Button1"  type="button"  runat="server" style="background-color: #5F870E" >
+                             Change Information </button></a> 
+                                                  
+                      <a id="A3" ><input id="Button2" type="button" runat="server" value="Logout" 
+                            onserverclick="btn_logout" style=" background-color: #5F870E" /></a></fieldset>
+                             
+                         </h1>
+                         </h1>
+    
+		<%--<div >
+        	<div class="btn-sign" style="text-align: right; vertical-align: bottom">
+				<a href="#login-box" class="login-window" 
+                    style="text-align: right; vertical-align: bottom;"> Login</a>&nbsp;&nbsp; </div>
+            
+        
+        </a><div style="display: none; margin-top: -112px; margin-left: -130px;" id="login-box" 
+                                 class="login-popup"><a href="#login-box" class="login-window">
+        </a><a href="#" class="close"><img src="images/close_pop.png"class="btn_close" title="Close Window" alt="Close" /></a>
+        
+        
+        
+          <form  class="signin" runat="server">
+                <fieldset class="textbox">
+            	<label class="username">
+                <span>Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="txtusername"  runat="server" autocomplete="on" placeholder="Username" ></span>&nbsp;
+                </label>
+                
+                <label class="password">
+                <span>&nbsp;&nbsp;&nbsp; Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="txtpassword" runat="server" placeholder="Password" type="password" ></span>&nbsp;
+                
+               
+                <%--<button id="btnsubmit1"  type="button"  runat="server" onserverclick="ketnoi" >Sign in</button>--%>
+               <%-- <asp:Button ID="btnkn" runat="server" Text="Button" onclick="ketnoi_Click"></asp:Button>
+               
+                </label>
+                
+                <p>
+                <a class="" href="#">Forgot your password?</a>
+                </p>     
+          </form>
+          
+          
+          
+		</div>--%>
+   
+    </div>
+                    </fieldset>
+                    </form>
+				</div>
+				<nav>
+					<ul id="menu">
+						<li id="menu1"><a href="Home.aspx"><span>Home</span></a></li>
+						<li id="menu2"><a href="Company.aspx"><span>Company</span></a></li>
+						<li id="menu3"><a href="Services.aspx"><span>Services</span></a></li>
+						<li id="menu4"><a href="Vacancies.aspx"><span>Vacancies</span></a></li>
+						<li class="last" id="menu5"><a href="Contacts.aspx"><span>Contacts</span></a></li>
+					</ul>
+				</nav>
+				<div id="slider">
+					
+						
+							            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        </asp:ContentPlaceHolder>
+        
+						
+					
+				</div>
+			</header>
+<!--header end-->
+<!--content -->
+			<article id="content"><div class="ic"></div>
+				<div class="wrapper" style="text-align:left">
+					<div class="col1 marg_right1">
+						<h2><a href="Services.aspx">Manned guarding</h2>
+						<p>The service portfolio of this division includes guarding, fire squad, dog squad, bodyguards etc. for industries, banks, retail outlets, residential colonies, hotels and institutions</p>
+					</div>
+					<div class="col1 marg_right1">
+						<h2><a href="Services.aspx">Cash Services</h2>
+						<p>The service range of the Cash Services division includes secured transfer of cash and valuables, ATM replenishment, Vaulting and Processing Services, multi-point cash collection and Caretaker Services</p>
+					</div>
+					<div class="col1 marg_right1">
+						<h2><a href="Services.aspx">Electronic security systems</h2>
+						<p>This division works in close association with SIS's strategic partners i.e. reputed system integrators & installers. The primary area of activity for this division is design, installation and maintenance of Access control systems, CCTVs, fire alarm systems, fire suppression systems, intruder/burglar alarms, perimeter protection systems, etc. The division aims at marketing its products to the existing customer base.</p>
+					</div>
+					<div class="col1">
+						<h2>Sitemap</h2>
+						<ul class="list1">
+						    <li></li>
+							<li><a href="Home.aspx">Home</a></li>
+							<li><a href="Company.aspx">Company</a></li>
+							<li><a href="Services.aspx">Sevice</a></li>
+							<li><a href="Vacancies.aspx">Vacancies</a></li>
+							<li><a href="Contacts.aspx">Contacts</a></li>
+						</ul>
+					</div>
+				</div>
+			</article>
+		</div>
+		<div class="main">
+<!--content end-->
+<!--footer -->
+			<footer>
+				<ul id="icons">
+					<li class="first">Follow Us:</li>
+					<li><a href="http://goo.gl/oZ3Beo" class="normaltip" title="Facebook"><img src="images/icon1.jpg" alt=""></a></li>
+				</ul>
+				Design by Group II
+    <br />
+    Copyright © 2014 eProject Start Security Services<br>
+				<!-- {%FOOTER_LINK} -->
+			</footer>
+<!--footer end-->
+		</div>
+		<script type="text/javascript"> Cufon.now(); </script>
+		<script>
+			$(window).load(function(){
+				$('#slider')._TMS({
+					banners:true,
+					waitBannerAnimation:false,
+					preset:'diagonalFade',
+					easing:'easeOutQuad',
+					pagination:true,
+					duration:400,
+					slideshow:8000,
+					bannerShow:function(banner){
+						banner.css({marginRight:-500}).stop().animate({marginRight:0}, 600)
+					},
+					bannerHide:function(banner){
+						banner.stop().animate({marginRight:-500}, 600)
+					}
+					})
+			})
+			function btnsubmit_onclick() {
+               
+			}
+			
+
+function Button2_onclick() {
+
+}
+
+        </script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.exe
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.pdb
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.DonHang.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.HoaDonBanHang.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.MainForm.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.KhachHang.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.NhanVien.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.Properties.Resources.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.SanPham.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.TimKiemDonHang.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.TimKiemSanPham.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.ĐangNhap.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.csproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.ChiTietHoaDon.resources
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\bin\Debug\QuanLyBanDidong.exe
+C:\Users\ACER\Desktop\Bai Tap Nhom\BridalStoreManagement\QuanLyBanDidong\bin\Debug\QuanLyBanDidong.pdb
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.exe
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.pdb
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\bin\Debug\QuanLyBanDidong.exe
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\bin\Debug\QuanLyBanDidong.pdb
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\ResolveAssemblyReference.cache
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.MainForm.resources
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.KhachHang.resources
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.NhanVien.resources
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\QuanLyBanDidong.Properties.Resources.resources
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.csproj.GenerateResource.Cache
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.Loai.resources
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.NhaCC.resources
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.NhapHang.resources
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.dangnhap.resources
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.TimKiem.resources
+C:\Client\Aptech\Project III\BridalStoreManagement\QuanLyBanDidong\obj\Debug\BridalStoreManagement.BanHang.resources

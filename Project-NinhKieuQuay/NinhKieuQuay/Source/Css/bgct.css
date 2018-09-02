@@ -1,0 +1,73 @@
+section.contactDet{
+background:url(Source/Img/contbg.png) repeat; padding:10px; height:340px;
+}
+div.contCol1{
+width:245px; float:left; margin-right:25px; display:inline;
+}
+div.contCol2{
+width:270px; float:left;
+}
+div.contCol3{
+width:260px; float:right;
+}
+address{
+font-style:normal; line-height:18px; padding:5px 0;
+}
+div.contForm{
+margin-top:18px;
+}
+div.contForm .fieldRow{
+padding:4px 0; clear:both;
+}
+div.contForm label{
+display:block; padding-bottom:2px;
+}
+div.contForm input, div.contForm select, div.contForm textarea{
+padding:5px 4px; border:solid 1px #1a1a1a; width:180px; background:rgba(0,0,0,0.2);
+}
+div.contForm textarea{
+width:260px;
+}
+div.contForm input.button{
+cursor: pointer;
+background:#7b7e7e; padding:7px; width:90px; font-weight:bold; margin-right:5px; color:#000; border:0; box-shadow:2px 2px 1px rgba(0,0,0,0.5); -moz-box-shadow:2px 2px 1px rgba(0,0,0,0.5); -webkit-box-shadow:2px 2px 1px rgba(0,0,0,0.5);
+}
+div.contForm input.button:hover{
+background:#dedede;
+}
+div.contForm .rightCol{
+margin-left:140px;
+}
+footer.foot{
+background:url(Source/Img/footer-bg.gif) center top repeat-x;
+}
+footer.foot section.address{
+padding:32px 0 28px; border-bottom:solid 1px #281f0d; color:#98835f; font-size:14px; line-height:18px; text-align:right; clear:both;
+}
+footer.foot section.address h4{
+color:#98835f; font-size:23px;
+}
+footer.foot nav{
+float:left; padding:20px 0 40px;
+}
+footer.foot nav a, footer.foot nav a:visited{
+color:#ddcaa8; margin-right:8px;
+}
+footer.foot nav a:hover, footer.foot nav a.footActv, footer.foot nav a.footActv:visited, footer.foot nav a.footActv:hover{
+color:#a37136; text-decoration:none;
+}
+footer.foot div.copyright{
+float:right; text-align:right; color:#98835f; padding:20px 0 40px;
+}
+footer.foot div.designby{
+font-size:12px; color:#68625c;
+}
+div.designby a, div.designby a:visited{
+color:#68625c;
+}
+.socIcons{
+float:right; padding-top:5px;
+}
+.socIcons a{
+margin-left:8px;
+}

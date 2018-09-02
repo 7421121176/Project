@@ -1,0 +1,2648 @@
+/**
+ * ---------------------------------------------------------------------------
+ * contents
+ * ---------------------------------------------------------------------------
+ *
+ * 1. colors
+ * 2. animations
+ * 3. fonts
+ * 4. global
+ * 5. framework
+ * 6. default styles
+ * 7. tablet styles
+ * 8. tablet small styles
+ * 9. mobile styles
+ * 10. mobile small styles
+ * 11. helper classes
+ * 12. print styles
+ *
+ */
+
+/**
+ * ---------------------------------------------------------------------------
+ * 1. colors
+ * ---------------------------------------------------------------------------
+ *
+ * #4d4d4d Gray
+ * #ebeff2 Light Blue Gray // eeeff3
+ * #2577ba Blue // 232d36
+ * #32425c Dark Blue // 32415c
+ * #607189 Muted White
+ * #ce616e Pink (Home)
+ * #7b66c8 Purple (Freelance)
+ * #a1c765 Green (Paramore)
+ * #2a94d6 Light Blue (Salesforce)
+ *
+ */
+
+/**
+ * ---------------------------------------------------------------------------
+ * 2. animations
+ * ---------------------------------------------------------------------------
+ */
+
+/* fadeIn */
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.animate-fade-in {
+	-webkit-animation: fadeIn .5s ease-in-out;
+	-moz-animation: fadeIn .5s ease-in-out;
+	animation: fadeIn .5s ease-in-out;
+}
+
+.touch .animate-fade-in {
+	-webkit-animation: none;
+	-moz-animation: none;
+	animation: none;
+}
+
+/* pulsate */
+
+@-webkit-keyframes pulsate {
+	0% {
+		-webkit-transform: scale(0.2);
+		transform: scale(0.2);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes pulsate {
+	0% {
+		-webkit-transform: scale(0.2);
+		transform: scale(0.2);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+		opacity: 0;
+	}
+}
+
+@keyframes pulsate {
+	0% {
+		-webkit-transform: scale(0.2);
+		transform: scale(0.2);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+		opacity: 0;
+	}
+}
+
+/* spin */
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+/* moveClouds (salesforce masthead) */
+
+@-webkit-keyframes moveClouds {
+	0% { margin-left: -113px; }
+	100% { margin-left: -1320px; }
+}
+
+@-moz-keyframes moveClouds {
+	0% { margin-left: -113px; }
+	100% { margin-left: -1320px; }
+}
+
+@keyframes moveClouds {
+	0% { margin-left: -113px; }
+	100% { margin-left: -1320px; }
+}
+
+/* slideInLeft (paramore masthead) */
+
+@-webkit-keyframes slideInLeft {
+	0% {
+		left: 52px;
+		opacity: 0;
+	}
+	100% {
+		left: 2px;
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes slideInLeft {
+	0% {
+		left: 52px;
+		opacity: 0;
+	}
+	100% {
+		left: 2px;
+		opacity: 1;
+	}
+}
+
+@keyframes slideInLeft {
+	0% {
+		left: 52px;
+		opacity: 0;
+	}
+	100% {
+		left: 2px;
+		opacity: 1;
+	}
+}
+
+/* slideInRight (paramore masthead) */
+
+@-webkit-keyframes slideInRight {
+	0% {
+		right: 52px;
+		opacity: 0;
+	}
+	100% {
+		right: 2px;
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes slideInRight {
+	0% {
+		right: 52px;
+		opacity: 0;
+	}
+	100% {
+		right: 2px;
+		opacity: 1;
+	}
+}
+
+@keyframes slideInRight {
+	0% {
+		right: 52px;
+		opacity: 0;
+	}
+	100% {
+		right: 2px;
+		opacity: 1;
+	}
+}
+
+/* slideUp (paramore masthead) */
+
+@-webkit-keyframes slideUp {
+	0% { bottom: -50px; }
+	100% { bottom: 0; }
+}
+
+@-moz-keyframes slideUp {
+	0% { bottom: -50px; }
+	100% { bottom: 0; }
+}
+
+@keyframes slideUp {
+	0% { bottom: -50px; }
+	100% { bottom: 0; }
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * 3. fonts
+ * ---------------------------------------------------------------------------
+ */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * 4. global
+ * ---------------------------------------------------------------------------
+ */
+
+body {
+	background: #32425c;
+	color: #4d4d4d;
+	font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.7333;
+}
+
+/*body:after {
+	background: rgba(0, 0, 0, .5);
+	bottom: 0;
+	color: #fff;
+	content: "Default";
+	display: block;
+	line-height: 1;
+	padding: 10px 20px;
+	position: fixed;
+	right: 0;
+	z-index: 10;
+}*/
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #4d4d4d;
+	text-decoration: none;
+}
+
+blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+	blockquote p {
+		font-size: 40px;
+		font-style: italic;
+		letter-spacing: -1px;
+		line-height: 1;
+		margin: 0;
+	}
+
+	blockquote p:before { content: '"'; }
+
+	blockquote p:after { content: '"'; }
+
+blockquote small {
+	display: block;
+	font-size: 20px;
+	letter-spacing: -1px;
+	line-height: 20px;
+	margin-top: 26px;
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * 5. framework
+ * ---------------------------------------------------------------------------
+ */
+
+ /* tagline */
+
+ .tagline {
+ 	font-size: 20px;
+ 	font-weight: 300;
+ 	line-height: 1;
+ 	letter-spacing: -1px;
+ 	margin: 0;
+ 	text-transform: uppercase;
+ }
+
+ .home-page .tagline { text-transform: none; }
+
+/* buttons */
+
+.button {
+	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, .07);
+	border-radius: 3px;
+	color: #2577ba;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	height: auto;
+	line-height: 1;
+	overflow: hidden;
+	padding: 13px 30px 11px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: all .25s linear;
+	-moz-transition: all .25s linear;
+	-o-transition: all .25s linear;
+	transition: all .25s linear;
+	width: auto;
+	*display: inline;
+	*zoom: 1;
+}
+
+.button:link,
+.button:visited { color: #2577ba; }
+
+.button:hover,
+.button:active {
+	border-color: rgba(0, 0, 0, .14);
+	color: #32425c;
+}
+
+.button-small {
+	font-size: 10px;
+	padding-bottom: 8px;
+	padding-top: 10px;
+}
+
+.button-large {
+	font-size: 14px;
+	padding-bottom: 18px;
+	padding-top: 20px;
+}
+
+.icon-brad,
+.button-icon {
+	background-position: 50%;
+	background-repeat: no-repeat;
+	display: block;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+}
+
+.home-page .icon-brad,
+.home-page .button-icon { background-color: #ce616e; }
+
+.freelance-page .icon-brad,
+.freelance-page .button-icon { background-color: #7b66c8; }
+
+.paramore-page .icon-brad,
+.paramore-page .button-icon { background-color: #a1c765; }
+
+.salesforce-page .icon-brad,
+.salesforce-page .button-icon { background-color: #2a94d6; }
+
+.masthead .button-icon { background-color: rgba(0, 0, 0, .1); }
+
+.button-icon:hover {
+	margin-top: -5px;
+	padding: 5px;
+}
+
+	/* icon-brad */
+
+	.icon-brad {
+		background-image: url(assets/img/ico-brad@2x.png);
+		background-size: 84px;
+		border-radius: 84px;
+		height: 84px;
+		margin-left: -42px;
+		top: 78px;
+		width: 84px;
+	}
+
+		.no-backgroundsize .icon-brad { background-image: url(assets/img/ico-brad.png); }
+
+	/*.icon-brad:hover { margin-left: -47px; }*/
+
+	/* icon-top */
+
+	.icon-top {
+		background-image: url(assets/img/ico-arrow-top@2x.png);
+		background-size: 89px;
+		border-radius: 89px;
+		height: 89px;
+		margin-left: -45px;
+		top: 102px;
+		width: 89px;
+	}
+
+		.no-backgroundsize .icon-top { background-image: url(assets/img/ico-arrow-top.png); }
+
+	.icon-top:hover { margin-left: -50px; }
+
+	/* icon-arrow */
+
+	.icon-arrow {
+		background-size: 44px;
+		border-radius: 44px;
+		height: 44px;
+		position: absolute;
+		width: 44px;
+	}
+
+	.home-page .icon-arrow { top: -121px; }
+
+	.freelance-page .icon-arrow { top: -104px; }
+
+	.paramore-page .icon-arrow { top: -105px; }
+
+	.salesforce-page .icon-arrow { top: -81px; }
+
+	.icon-arrow-left {
+		background-image: url(assets/img/ico-arrow-left@2x.png);
+		left: 24px;
+	}
+
+		.no-backgroundsize .icon-arrow-left { background-image: url(assets/img/ico-arrow-left.png); }
+
+	.icon-arrow-left:hover { margin-left: -5px; }
+
+	.icon-arrow-right {
+		background-image: url(assets/img/ico-arrow-right@2x.png);
+		left: auto;
+		right: 24px;
+	}
+
+		.no-backgroundsize .icon-arrow-right { background-image: url(assets/img/ico-arrow-right.png); }
+
+	.icon-arrow-right:hover { margin-right: -5px; }
+
+/* button-icon (legacy support) */
+
+.no-borderradius .icon-brad,
+.no-borderradius .button-icon {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+.no-borderradius .button-icon:hover {
+	margin-top: 0;
+	padding: 0;
+}
+
+	/* icon-brad */
+
+	.no-borderradius .icon-brad,
+	.no-backgroundsize.no-borderradius .icon-brad { background-image: url(assets/img/ico-brad-fallback.png); }
+
+	.backgroundsize.no-borderradius .icon-brad { background-size: auto; }
+
+	.no-borderradius .home-page .icon-brad { background-position: 0 0; }
+
+	.no-borderradius .freelance-page .icon-brad { background-position: -84px 0; }
+
+	.no-borderradius .paramore-page .icon-brad { background-position: -168px 0; }
+
+	.no-borderradius .salesforce-page .icon-brad { background-position: -252px 0; }
+
+	.no-borderradius .icon-brad:hover { margin-left: -42px; }
+
+	/*.no-backgroundsize.no-borderradius .icon-brad { background-image: url(assets/img/ico-brad.png); }*/
+
+	/* icon-top */
+
+	.no-borderradius .icon-top,
+	.no-backgroundsize.no-borderradius .icon-top { background-image: url(assets/img/ico-arrow-top-fallback.png); }
+
+	.backgroundsize.no-borderradius .icon-top { background-size: auto; }
+
+	.no-borderradius .home-page .icon-top { background-position: 0 0; }
+
+	.no-borderradius .freelance-page .icon-top { background-position: -89px 0; }
+
+	.no-borderradius .paramore-page .icon-top { background-position: -178px 0; }
+
+	.no-borderradius .salesforce-page .icon-top { background-position: -267px 0; }
+
+	.no-borderradius .icon-top:hover { margin-left: -45px; }
+
+	/*.no-backgroundsize.no-borderradius .icon-top { background-image: url(assets/img/ico-arrow-top.png); }*/
+
+	/* icon-arrow */
+
+	.no-borderradius .icon-arrow,
+	.no-backgroundsize.no-borderradius .icon-arrow { background-image: url(assets/img/ico-arrow-carousel-fallback.png); }
+
+	.backgroundsize.no-borderradius .icon-arrow { background-size: auto; }
+
+	.no-borderradius .icon-arrow-left { background-position: 0 0; }
+
+	.no-borderradius .icon-arrow-right { background-position: -44px 0; }
+
+	.no-borderradius .icon-arrow:hover { margin-left: 0; }
+
+	/*.no-backgroundsize.no-borderradius .icon-arrow-left { background-image: url(assets/img/ico-arrow-left.png); }*/
+
+	/*.no-backgroundsize.no-borderradius .icon-arrow-right { background-image: url(assets/img/ico-arrow-right.png); }*/
+
+/* containers */
+
+.container,
+.container-inner { position: relative; }
+
+.container { width: 100%; }
+
+.container-inner {
+	margin: 0 auto;
+	max-width: 790px;
+	width: 77.148438%; /* 790 ÷ 1024 */
+}
+
+/* icons */
+
+.icon {
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * 6. default styles
+ * ---------------------------------------------------------------------------
+ */
+
+/* header */
+
+#header { height: auto; }
+
+/*.home-page #header { height: 874px; }*/
+
+/*.freelance-page #header { height: 688px; }*/
+
+/*.salesforce-page #header { height: 739px; }*/
+
+/*.paramore-page #header { height: 671px; }*/
+
+	.header-title { padding-top: 216px; }
+
+		.header-title h2 { margin-bottom: 15px; }
+
+	/* ico-navigation */
+
+	.ico-navigation {
+		background-image: url(assets/img/ico-navigation.png);
+		height: 26px;
+		left: 40px;
+		position: fixed;
+		top: 40px;
+		-webkit-transition: opacity .25s ease-in-out;
+		-moz-transition: opacity .25s ease-in-out;
+		-o-transition: opacity .25s ease-in-out;
+		transition: opacity .25s ease-in-out;
+		width: 30px;
+		z-index: 9;
+	}
+
+	.backgroundsize .ico-navigation {
+		background-image: url(assets/img/ico-navigation@2x.png);
+		background-size: 30px 26px;
+	}
+
+	.ico-navigation-close {
+		background-image: url(assets/img/ico-close.png);
+		background-position: 2px 0;
+	}
+
+	.backgroundsize .ico-navigation-close {
+		background-image: url(assets/img/ico-close@2x.png);
+		background-size: 26px;
+	}
+
+	.ico-navigation:hover,
+	.ico-navigation-close:hover { opacity: .5; }
+
+	/* navigation */
+
+	.navigation {
+		background: #293449;
+		bottom: 0;
+		height: auto;
+		left: 0;
+		margin-left: -135%;
+		overflow-y: scroll;
+		padding: 65px 100px 65px 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		-webkit-transition: margin .25s ease-in-out;
+		-moz-transition: margin .25s ease-in-out;
+		-ms-transition: margin .25s ease-in-out;
+		-o-transition: margin .25s ease-in-out;
+		transition: margin .25s ease-in-out;
+		width: 100%;
+		z-index: 10;
+	}
+
+	.navigation-open {
+		margin-left: 0;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.navigation-hide-overflow { overflow: hidden; }
+
+		.navigation > .container-inner {
+			height: 100%;
+			max-width: 664px;
+			text-align: center;
+			width: 64.84375%; /* 664 ÷ 1024 */
+		}
+
+		.avatar {
+			border-radius: 50%;
+			display: inline-block;
+			height: 151px;
+			position: relative;
+			width: 151px;
+		}
+
+		.navigation p {
+			font-size: 24px;
+			font-weight: 300;
+			letter-spacing: -1px;
+			line-height: 1.42857143; /* 40px */
+			margin: 52px 0 0;
+		}
+
+		.navigation ul {
+			list-style: none;
+			padding: 0;
+		}
+
+		.navigation li { float: left; }
+
+		.navigation-main { margin: 56px 0 0; }
+
+		.navigation-main li {
+			float: left;
+			margin: 0 0 32px;
+			line-height: 1;
+			width: 50%;
+		}
+
+		.navigation-main li a {
+			border-radius: 3px;
+			display: block;
+			font-size: 40px;
+			font-weight: 400;
+			line-height: 1;
+			padding: 13px 0 23px;
+			-webkit-transition: background-color .25s ease-in-out, color .25s ease-in-out;
+			-moz-transition: background-color .25s ease-in-out, color .25s ease-in-out;
+			-o-transition: background-color .25s ease-in-out, color .25s ease-in-out;
+			transition: background-color .25s ease-in-out, color .25s ease-in-out;
+		}
+
+		.navigation-main li a:hover { background-color: #1f2838; }
+
+		.home-page .navigation-main li a { color: #ce616e; }
+
+		/*.home-page .navigation a:hover { color: #9b4752; }*/
+
+		.freelance-page .navigation-main li a { color: #7b66c8; }
+
+		/*.freelance-page .navigation a:hover { color: #584a83; }*/
+
+		.paramore-page .navigation-main li a { color: #a1c765; }
+
+		/*.paramore-page .navigation a:hover { color: #76964b; }*/
+
+		.salesforce-page .navigation-main li a { color: #2a94d6; }
+
+		/*.salesforce-page .navigation a:hover { color: #24709f; }*/
+
+			.navigation-main li a em {
+				color: #fff;
+				display: block;
+				font-size: 22px;
+				font-style: normal;
+				font-weight: 300;
+				margin-top: 11px;
+			}
+
+			/*.navigation a:hover em { opacity: .5; }*/
+
+		.navigation-social {
+			margin: 58px auto 0;
+			width: 308px; /* 308px ÷ 664px = 46.385542% */
+		}
+
+			.navigation-social li { margin-right: 77px; /* 77px ÷ 308px = 25% */ }
+
+			.navigation-social li.last-child { margin-right: 0; }
+
+			.icon-social {
+				display: block;
+				height: 51px;
+				width: 51px;
+			}
+
+			.no-inlinesvg .icon-social {
+				background-image: url(assets/img/icon-social-sprite-fallback.png);
+				direction: ltr;
+				overflow: hidden;
+				text-indent: -9999px;
+			}
+
+				.icon-social svg {
+					display: block;
+					height: 100%;
+					width: 100%;
+				}
+
+				.icon-social path {
+					fill: #fff;
+					-webkit-transition: fill .25s ease-in-out;
+					-moz-transition: fill .25s ease-in-out;
+					-o-transition: fill .25s ease-in-out;
+					transition: fill .25s ease-in-out;
+				}
+
+			.no-inlinesvg .icon-social-linkedin {
+				background-position: 0 0;
+				width: 52px;
+			}
+
+			.no-inlinesvg .icon-social-dribbble { background-position: -51px 0; }
+
+			.no-inlinesvg .icon-social-instagram { background-position: -103px 0; }
+
+			.home-page .icon-social:hover path { fill: #ce616e; }
+
+			.freelance-page .icon-social:hover path { fill: #7b66c8; }
+
+			.paramore-page .icon-social:hover path { fill: #a1c765; }
+
+			.salesforce-page .icon-social:hover path { fill: #2a94d6; }
+
+	/* map */
+
+	.map {
+		height: 489px;
+		height: auto;
+		margin-top: 40px;
+		padding-bottom: 77px;
+		position: relative;
+		width: 100%;
+	}
+
+		.map img {
+			display: block;
+			left: 0;
+			max-width: 790px;
+			position: absolute;
+			position: relative;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		.map-location-marker {
+			background-color: #ce616e;
+			border-radius: 17px;
+			display: none;
+			height: 17px;
+			position: absolute;
+			-webkit-transition: .2s all ease-in-out;
+			-moz-transition: .2s all ease-in-out;
+			-o-transition: .2s all ease-in-out;
+			transition: .2s all ease-in-out;
+			width: 17px;
+			z-index: 2;
+		}
+
+			.map-location-marker:hover { background-color: #e86c78; }
+
+			.marker-sf {
+				left: 9px; /*1.1538462%*/
+				top: 221px; /*45.194274%*/
+			}
+
+			.marker-la {
+				left: 89px;
+				top: 316px;
+			}
+
+			.marker-memphis {
+				left: 516px;
+				top: 301px;
+			}
+
+			.marker-nashville {
+				left: 559px;
+				top: 291px;
+			}
+
+			.marker-nyc {
+				left: 717px;
+				top: 148px;
+			}
+
+			.map-location-marker:after {
+				-webkit-animation: pulsate 2s ease-in-out infinite;
+				-moz-animation: pulsate 2s ease-in-out infinite;
+				animation: pulsate 2s ease-in-out infinite;
+				background: transparent;
+				border: 2px solid #ce616e;
+				/*border: 2px solid rgba(37, 119, 186, .5);*/
+				border-radius: 27px;
+				content: "";
+				display: block;
+				height: 27px;
+				left: -7px;
+				opacity: 0;
+				position: absolute;
+				top: -7px;
+				-webkit-transition: all .25s linear;
+				-moz-transition: all .25s linear;
+				-o-transition: all .25s linear;
+				transition: all .25s linear;
+				width: 27px;
+				z-index: -1;
+			}
+
+			.touch .map-location-marker:after {
+				-webkit-animation: none;
+				-moz-animation: none;
+				animation: none;
+			}
+
+			.ie .map-location-marker:after { display: none; }
+
+			/*.map-location-marker:hover:after { opacity: .5; }*/
+			/*.map-location-marker:hover > span { opacity: .5; }*/
+
+			.map-location-marker:hover:after { border-color: #e86c78; }
+
+		.map-location-marker.active { background-color: #e86c78; }
+
+		.map-location-marker.inactive { opacity: .25; }
+
+		.map-location-marker.active:after,
+		.map-location-marker.active:hover:after,
+		.map-location-marker.pause:after {
+			display: none;
+			opacity: 0;
+		}
+
+		.map-location-info-inline { display: none; }
+
+		.map-location-info {
+			background-color: #fff;
+			border-radius: 20px;
+		}
+
+		.map-location-info .tooltipster-content { overflow: hidden; }
+
+			.map-location-info h4 {
+				background-color: #ce616e;
+				background-clip: border-box;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				color: #fff;
+				font-size: 22px;
+				line-height: 1;
+				margin: 0;
+				padding: 11px 29px 11px;
+			}
+
+			.map-location-info small {
+				color: #fff;
+				display: block;
+				font-size: 15px;
+				height: 26px;
+				letter-spacing: -1px;
+				line-height: 1;
+				padding: 18px 30px 0 0;
+				position: absolute;
+				right: 0;
+				text-align: right;
+				top: 0;
+				width: 100px;
+			}
+
+			.map-location-info p {
+				background-color: #fff;
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+				color: #4d4d4d;
+				font-size: 15px;
+				line-height: 26px;
+				margin: 0;
+				padding: 16px 30px 25px;
+			}
+
+		/*.map-location-info .tooltipster-arrow .tooltipster-arrow-border {}*/
+
+		.tooltipster-arrow-bottom span { border-color: #ce616e !important; }
+
+/* masthead */
+
+.masthead { height: auto; }
+
+/*.home-page .masthead { height: auto; }*/
+
+.freelance-page .masthead { min-height: 354px; } /* 377px - 23px */
+
+.salesforce-page .masthead { min-height: 428px; }
+
+.paramore-page .masthead { min-height: 336px; } /* 360px - 24px */
+
+.salesforce-log-in-form {
+	background-color: #f5f5f5;
+	bottom: 10px;
+	height: 120px;
+	left: 50%;
+	margin-left: -136.5px;
+	padding: 19px 18px 0;
+	position: absolute;
+	width: 169px;
+	z-index: 4;
+}
+
+	.salesforce-log-in-form > div { margin-bottom: 10px; }
+
+	.salesforce-log-in-form input,
+	.salesforce-log-in-form button {
+		border-radius: 5px;
+		font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+		font-size: 13px;
+		font-weight: 300;
+	}
+
+	.salesforce-log-in-form input {
+		background-color: #e2e6e9;
+		border: 1px solid #e2e6e9;
+		height: 29px;
+		padding: 0 12px;
+		-webkit-transition: border ease-in-out .25s, box-shadow ease-in-out .25s;
+		-moz-transition: border ease-in-out .25s, box-shadow ease-in-out .25s;
+		-o-transition: border ease-in-out .25s, box-shadow ease-in-out .25s;
+		transition: border ease-in-out .25s, box-shadow ease-in-out .25s;
+		width: 144px;
+	}
+
+	.salesforce-log-in-form input:focus {
+		border-color: rgba(82, 168, 236, .8);
+		-webkit-box-shadow:
+			inset 0 1px 1px rgba(0, 0, 0, .075),
+			0 0 8px rgba(82, 168, 236, .6);
+		box-shadow:
+			inset 0 1px 1px rgba(0, 0, 0, .075),
+			0 0 8px rgba(82, 168, 236, .6);
+		outline: 0;
+		outline: thin dotted \9; /* IE6-9 */
+	}
+
+	.salesforce-log-in-form input.error {
+		border-color: #d73131;
+		box-shadow:
+			inset 0 1px 1px rgba(0, 0, 0, .075),
+			0 0 8px rgba(215, 49, 49, .6);
+	}
+
+	.salesforce-log-in-form button {
+		background-color: #2a94d6;
+		border: 0;
+		color: #fff;
+		display: block;
+		height: 32px;
+		padding: 0;
+		text-align: center;
+		-webkit-transition: background-color .25s ease-in-out;
+		-moz-transition: background-color .25s ease-in-out;
+		-o-transition: background-color .25s ease-in-out;
+		transition: background-color .25s ease-in-out;
+		width: 170px;
+	}
+
+	.salesforce-log-in-form button:hover { background-color: #1872aa; }
+
+/* main */
+
+#main {}
+
+	/* section-introduction */
+
+	.section-introduction { background-color: #fff; }
+
+	.ie .section-introduction { color: #4d4d4d; }
+
+		.section-introduction > .container-inner {
+			padding-bottom: 66px;
+			padding-top: 67px;
+		}
+
+		.section-introduction p {
+			font-size: 20px;
+			letter-spacing: -1px;
+			line-height: 36px;
+			margin: 0;
+		}
+
+	/* section */
+
+	.section {
+		background-color: #fff;
+		padding: 0;
+		position: relative;
+	}
+
+	/* home-page */
+
+	.home-page .section-alternate { background-color: #ebeff2; }
+
+	.section-home-salesforce { padding: 126px 0 106px; }
+
+	.section-home-paramore { padding: 129px 0 139px; }
+
+	.section-home-freelance { padding: 165px 0 130px; }
+
+	/* freelance-page */
+
+	.section-freelance-startup {
+		background-color: #ebeff2;
+		padding: 91px 0 50px;
+	}
+
+	.section-freelance-roundingwell {
+		background-color: #38404c;
+		color: #ebeef0;
+		padding: 110px 0 42px;
+	}
+
+		.ie .section-freelance-roundingwell .section-content { color: #ebeef0; }
+
+	.section-freelance-wayne-reed { padding: 93px 0 42px; }
+
+	.section-freelance-campaign-monitor {
+		background-color: #f7f7f8;
+		padding: 106px 0 59px;
+	}
+
+	/* paramore-page */
+
+	.section-paramore-frist {
+		background-color: #f4f7f8;
+		padding: 106px 0 56px;
+	}
+
+	.section-paramore-isc {
+		background-color: #232d36;
+		color: #eee;
+		padding: 139px 0 83px;
+	}
+
+		.ie .section-paramore-isc .section-content { color: #eee; }
+
+	.section-paramore-healthways { padding: 120px 0 34px; }
+
+	/* salesforce-page */
+
+	.salesforce-page .section {
+		background-color: #fafafa;
+		padding: 0 0 0;
+	}
+
+	.salesforce-page .section-alternate { background-color: #ebeff2; }
+
+	.salesforce-page .section-salesforce-done {
+		background-color: #e6ecf0;
+		height: 574px;
+		/*padding: 195px 0 168px;*/
+	}
+
+		.salesforce-page .section-salesforce-done .section-content { padding-top: 195px; }
+
+	.salesforce-page .section-salesforce-collaboration {
+		height: 531px;
+		/*padding: 171px 0 153px;*/
+	}
+
+		.salesforce-page .section-salesforce-collaboration .section-content { padding-top: 171px; }
+
+	.salesforce-page .section-salesforce-publish {
+		height: 655px;
+		/*padding: 227px 0 195px;*/
+	}
+
+		.salesforce-page .section-salesforce-publish .section-content { padding-top: 227px; }
+
+	.salesforce-page .section-salesforce-files {
+		height: 522px;
+		/*padding: 170px 0 145px;*/
+	}
+
+		.salesforce-page .section-salesforce-files .section-content { padding-top: 170px; }
+
+	.salesforce-page .section-salesforce-productivity {
+		height: 593px;
+		/*padding: 207px 0 179px;*/
+	}
+
+		.salesforce-page .section-salesforce-productivity .section-content { padding-top: 207px; }
+
+	.salesforce-page .section-salesforce-business {
+		height: 584px;
+		overflow: hidden;
+		/*padding: 189px 0 162px;*/
+	}
+
+		.salesforce-page .section-salesforce-business .section-content { padding-top: 189px; }
+
+	.salesforce-page .section-salesforce-apps {
+		height: 681px;
+		/*padding: 150px 0 408px;*/
+	}
+
+		.salesforce-page .section-salesforce-apps .section-content { padding-top: 150px; }
+
+		.section-salesforce-apps p,
+		.section-salesforce-content p {
+			line-height: 30px;
+			margin: 28px auto 0;
+			width: 630px;
+		}
+
+		.section-salesforce-apps .project-screenshot-caption {
+			bottom: -311px;
+			line-height: 1;
+			margin: 0;
+			position: absolute;
+			width: 100%;
+		}
+
+	.salesforce-page .section-salesforce-content {
+		height: 775px;
+		overflow: hidden;
+		/*padding: 107px 0 547px;*/
+	}
+
+		.salesforce-page .section-salesforce-content .section-content { padding-top: 107px; }
+
+		.section-salesforce-content p { width: 560px; }
+
+	.salesforce-page .section-salesforce-companies {
+		height: 884px;
+		/*padding: 655px 0 111px;*/
+	}
+
+		.salesforce-page .section-salesforce-companies .section-content { padding-top: 655px; }
+
+	/* dark */
+
+	.section-dark,
+	.salesforce-page .section-dark {
+		background-color: #32425c;
+		color: #fff;
+	}
+
+	.ie .section-dark .section-content,
+	.ie .salesforce-page .section-dark .section-content { color: #fff; }
+
+		.section-dark .muted { color: #607189; }
+
+		.section img {}
+
+		.ie .section-content { color: #4d4d4d; }
+
+		.section-content.js-can-fade {
+			opacity: 0;
+			-webkit-transition: opacity .25s ease-in-out;
+			-moz-transition: opacity .25s ease-in-out;
+			-o-transition: opacity .25s ease-in-out;
+			transition: opacity .25s ease-in-out;
+		}
+
+		.ie .section-content.js-can-animate,
+		.ie .section-content.js-can-fade,
+		.no-js .section-content.js-can-fade,
+		.touch .section-content.js-can-fade { opacity: 1 !important; }
+
+			.section-description {
+				font-size: 16px;
+				line-height: 36px;
+			}
+
+			.section-meta {
+				color: #9fa1a3;
+				font-size: 16px;
+				line-height: 1;
+				margin: 11px 0 0;
+				padding-bottom: 5px;
+				text-transform: uppercase;
+			}
+
+			.section-alternate-dark .section-meta { color: #ebeef0; }
+
+			.home-page .section-meta { font-size: 13px; }
+
+			.section-content .button { margin-top: 22px; }
+
+	.section-text-left {}
+
+		.section-text-left img {}
+
+		.section-text-left .section-content {
+			float: left;
+			width: 45.56962%; /* 360px ÷ 790 */
+		}
+
+	.section-text-right {}
+
+		.section-text-right img {}
+
+		.section-text-right .section-content {
+			float: right;
+			padding-left: 1.2658228%; /* 10px ÷ 790 */
+			width: 44.303797%; /* 350px ÷ 790 */
+		}
+
+	.section-text-center {
+		text-align: center;
+		width: 100%;
+	}
+
+	.section-content-freelance { margin-top: -25px; }
+
+	/*#main > .container-inner {}*/
+
+	/* content-main */
+
+	/*.content-main {
+		margin: 0;
+		max-width: none;
+	}*/
+
+	/* screenshots */
+
+	.screenshot-group { position: relative; }
+
+	/*.screenshot-group-frist-modules {
+		height: 486px;
+		height: 561px;
+		width: 100%;
+	}*/
+
+		.screenshot-group > img {
+			height: auto;
+			position: absolute;
+			z-index: 2;
+		}
+
+		.screenshot-group-frist-modules .project-screenshot-caption {
+			bottom: 110px;
+			left: 0;
+			position: absolute;
+		}
+
+		.screenshot-frist-mobile {
+			bottom: -6px;
+			right: 6.3291139%; /* 50px ÷ 790px */
+			width: 29.367089%; /* 232px ÷ 790px */
+		}
+
+		.screenshot-frist-module-audio {
+			left: 0;
+			top: 0;
+			width: 29.113924%; /* 230px ÷ 790px */
+		}
+
+		.screenshot-frist-module-video {
+			left: 0;
+			top: 221px;
+			width: 29.113924%; /* 230px ÷ 790px */
+		}
+
+		.screenshot-frist-module-exhibition {
+			left: 31.898734%; /* 252px ÷ 790px */
+			top: -11px;
+			width: 29.113924%; /* 230px ÷ 790px */
+		}
+
+		.screenshot-frist-module-exhibition-sm {
+			left: 31.898734%; /* 252px ÷ 790px */
+			top: 335px;
+			width: 22.025316%; /* 174px ÷ 790px */
+		}
+
+		.screenshot-frist-module-event {
+			left: 64.050633%; /* 506px ÷ 790px */
+			top: 99px;
+			width: 29.113924%; /* 230px ÷ 790px */
+		}
+
+		.screenshot-frist-module-filter {
+			left: 56.708861%; /* 448px ÷ 790px */
+			top: 338px;
+			width: 43.164557%; /* 341px ÷ 790px */
+		}
+
+	/* illustrations */
+
+	.illustration-group { position: relative; }
+
+		.illustration-group img {
+			border: 0;
+			display: block;
+			opacity: 1;
+			position: absolute;
+		}
+
+		.illustration-group .illustration-group-image { display: none; }
+
+	/* home page illustrations */
+
+	.illustration-group-photoshop {
+		height: 297px;
+		overflow: hidden;
+		right: -24px;
+		position: absolute;
+		top: -22px;
+		width: 391px;
+	}
+
+		/* devices */
+
+		.illustration-phone {
+			height: 204px;
+			left: 257px;
+			top: 40px;
+			width: 95px;
+			z-index: 2;
+		}
+
+		.illustration-tablet {
+			height: 252px;
+			left: -2px;
+			top: -21px;
+			width: 324px;
+			z-index: 1;
+		}
+
+		/* photoshop */
+
+		.illustration-pointer {
+			height: 13px;
+			/*right: -10px;*/
+			right: 0;
+			top: 71px;
+			width: 17px;
+			z-index: 4;
+		}
+
+		.illustration-grid-lines-v,
+		.illustration-grid-lines-h,
+		.illustration-browser,
+		.illustration-toolbars {
+			height: 297px;
+			left: 0;
+			top: 0;
+			width: 391px;
+		}
+
+		.illustration-grid-lines-v,
+		.illustration-grid-lines-h { z-index: 3; }
+
+		.illustration-browser { z-index: 2; }
+
+		.illustration-toolbars { z-index: 4; }
+
+		/* tools */
+
+		.illustration-pencil {
+			height: 144px;
+			left: -2px;
+			top: 26px;
+			width: 15px;
+			z-index: 1;
+		}
+
+		.illustration-book {
+			height: 223px;
+			left: 39px;
+			top: -13px;
+			width: 170px;
+			z-index: 1;
+		}
+
+		.illustration-ruler {
+			height: 306px;
+			left: 230px;
+			top: -60px;
+			width: 39px;
+			z-index: 1;
+		}
+
+		.illustration-pen-red,
+		.illustration-pen-navy {
+			height: 149px;
+			top: 24px;
+			width: 17px;
+			z-index: 1;
+		}
+
+		.illustration-pen-red { left: 287px; }
+
+		.illustration-pen-navy { left: 309px; }
+
+	/* paramore masthead */
+
+	.masthead-paramore-browsers-container {
+		height: auto;
+		margin: 24px auto 0;
+		max-width: 1092px;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+		.masthead-paramore-browsers-container img { display: block; }
+
+		.browser-center {
+			-webkit-animation: slideUp 1s ease-in-out;
+			-moz-animation: slideUp 1s ease-in-out;
+			animation: slideUp 1s ease-in-out;
+			margin: 0 auto;
+			position: relative;
+			z-index: 2;
+		}
+
+		.browser-left,
+		.browser-right {
+			bottom: 0;
+			position: absolute;
+			z-index: 1;
+		}
+
+		.browser-left {
+			-webkit-animation: slideInLeft 1s ease-in-out;
+			-moz-animation: slideInLeft 1s ease-in-out;
+			animation: slideInLeft 1s ease-in-out;
+			left: 2px;
+		}
+
+		.browser-right {
+			-webkit-animation: slideInRight 1s ease-in-out;
+			-moz-animation: slideInRight 1s ease-in-out;
+			animation: slideInRight 1s ease-in-out;
+			right: 2px;
+		}
+
+		.touch .browser-center,
+		.touch .browser-left,
+		.touch .browser-right {
+			-webkit-animation: none;
+			-moz-animation: none;
+			animation: none;
+		}
+
+	/* freelance masthead */
+
+	.masthead-freelance-tools-container {
+		height: auto;
+		margin: 23px auto 0;
+		max-width: 911px;
+		position: relative;
+		width: 100%;
+	}
+
+		.masthead-freelance-tools-container img { display: block; }
+
+		.freelance-coffee {
+			/*-webkit-animation: spin 20s linear infinite, fadeIn 5s linear;
+			-moz-animation: spin 20s linear infinite, fadeIn 5s linear;
+			animation: spin 20s linear infinite, fadeIn 5s linear;*/
+			height: auto;
+			left: 2.0856202%; /* 19px ÷ 911px */
+			position: absolute;
+			top: 5.0847458%; /* 18px ÷ 354px */
+			width: 18.002195%; /* 164px ÷ 911px */
+			z-index: 2;
+		}
+
+		.no-touch .freelance-coffee {
+			-webkit-animation: spin 20s linear infinite, fadeIn 5s linear;
+			-moz-animation: spin 20s linear infinite, fadeIn 5s linear;
+			animation: spin 20s linear infinite, fadeIn 5s linear;
+		}
+
+		.touch .freelance-coffee {
+			-webkit-animation: none;
+			-moz-animation: none;
+			animation: none;
+		}
+
+		.freelance-tools {
+			position: relative;
+			width: 100%;
+			z-index: 1;
+		}
+
+	/* salesforce page illustrations */
+
+	.illustration-salesforce-phone {
+		height: 383px;
+		left: 0;
+		top: 91px;
+		width: 180px;
+		z-index: 1;
+	}
+
+	.illustration-salesforce-phone-magnify {
+		height: 311px;
+		left: 12px;
+		top: 121px;
+		width: 311px;
+		z-index: 2;
+	}
+
+	.illustration-salesforce-social {
+		height: 276px;
+		right: 4px;
+		top: 134px;
+		width: 350px;
+		z-index: 1;
+	}
+
+	.illustration-salesforce-screen {
+		height: 448px;
+		left: -5px;
+		top: 109px;
+		width: 337px;
+		z-index: 2;
+	}
+
+	.illustration-salesforce-screen-icon-button {
+		height: 86px;
+		left: 242px;
+		top: 474px;
+		width: 86px;
+		z-index: 3;
+	}
+
+	.illustration-salesforce-screen-icon-email {
+		height: 103px;
+		left: -71px;
+		top: 285px;
+		width: 103px;
+		z-index: 3;
+	}
+
+	.illustration-salesforce-screen-icon-file {
+		height: 74px;
+		left: -35px;
+		top: 80px;
+		width: 74px;
+		z-index: 1;
+	}
+
+	.illustration-salesforce-file-list {
+		height: 307px;
+		right: -23px;
+		top: 99px;
+		width: 396px;
+		z-index: 2;
+	}
+
+	.illustration-salesforce-file-list-highlight {
+		height: 80px;
+		right: -23px;
+		top: 244px;
+		width: 396px;
+		z-index: 1;
+	}
+
+	.illustration-salesforce-cursor-pointer {
+		height: 21px;
+		right: 127px;
+		top: 302px;
+		width: 18px;
+		z-index: 3;
+	}
+
+	.illustration-salesforce-phone-2 {
+		height: 383px;
+		left: 183px;
+		top: 101px;
+		width: 180px;
+		z-index: 2;
+	}
+
+	.illustration-salesforce-task-list-complete {
+		height: 226px;
+		left: -1px;
+		top: 183px;
+		width: 295px;
+		z-index: 1;
+	}
+
+	.illustration-salesforce-navigation {
+		height: 448px;
+		right: 28px;
+		top: 67px;
+		width: 337px;
+		z-index: 1;
+	}
+
+	.illustration-salesforce-app-icon-change-status,
+	.illustration-salesforce-app-icon-photo,
+	.illustration-salesforce-app-icon-social-post,
+	.illustration-salesforce-app-icon-my-day,
+	.illustration-salesforce-app-icon-thanks,
+	.illustration-salesforce-app-icon-campaign,
+	.illustration-salesforce-app-icon-account,
+	.illustration-salesforce-app-icon-dashboards,
+	.illustration-salesforce-app-icon-case,
+	.illustration-salesforce-app-icon-poll,
+	.illustration-salesforce-app-icon-email,
+	.illustration-salesforce-app-icon-post,
+	.illustration-salesforce-app-icon-event,
+	.illustration-salesforce-app-icon-portal {
+		height: auto; /* 96px */
+		width: 12.151899%; /* 96px ÷ 790px */
+		z-index: 1;
+	}
+
+	.illustration-salesforce-app-icon-change-status,
+	.illustration-salesforce-app-icon-photo,
+	.illustration-salesforce-app-icon-social-post,
+	.illustration-salesforce-app-icon-my-day,
+	.illustration-salesforce-app-icon-thanks,
+	.illustration-salesforce-app-icon-campaign,
+	.illustration-salesforce-app-icon-account { top: 311px; }
+
+	.illustration-salesforce-app-icon-dashboards,
+	.illustration-salesforce-app-icon-case,
+	.illustration-salesforce-app-icon-poll,
+	.illustration-salesforce-app-icon-email,
+	.illustration-salesforce-app-icon-post,
+	.illustration-salesforce-app-icon-event,
+	.illustration-salesforce-app-icon-portal { top: 427px; }
+
+	.illustration-salesforce-app-icon-change-status,
+	.illustration-salesforce-app-icon-dashboards { left: 0.12658228%; } /* 1px ÷ 790px */
+
+	.illustration-salesforce-app-icon-photo,
+	.illustration-salesforce-app-icon-case { left: 14.810127%; } /* 117px ÷ 790px */
+
+	.illustration-salesforce-app-icon-social-post,
+	.illustration-salesforce-app-icon-poll { left: 29.367089%; } /* 232px ÷ 790px */
+
+	.illustration-salesforce-app-icon-my-day,
+	.illustration-salesforce-app-icon-email { left: 44.050633%; } /* 348px ÷ 790px */
+
+	.illustration-salesforce-app-icon-thanks,
+	.illustration-salesforce-app-icon-post { right: 29.240506%; } /* 231px ÷ 790px */
+
+	.illustration-salesforce-app-icon-campaign,
+	.illustration-salesforce-app-icon-event { right: 14.556962%; } /* 115px ÷ 790px */
+
+	.illustration-salesforce-app-icon-account,
+	.illustration-salesforce-app-icon-portal { right: 0; }
+
+	.illustration-salesforce-card-person,
+	.illustration-salesforce-card-contact,
+	.illustration-salesforce-card-file,
+	.illustration-salesforce-card-task,
+	.illustration-salesforce-card-case,
+	.illustration-salesforce-card-account { width: 381px; }
+
+	.illustration-salesforce-card-person,
+	.illustration-salesforce-card-contact,
+	.illustration-salesforce-card-file { left: 0; }
+
+	.illustration-salesforce-card-task,
+	.illustration-salesforce-card-case,
+	.illustration-salesforce-card-account { right: 2px; }
+
+	.illustration-salesforce-card-person,
+	.illustration-salesforce-card-task {
+		height: 84px;
+		top: 259px;
+	}
+
+	.illustration-salesforce-card-contact,
+	.illustration-salesforce-card-file,
+	.illustration-salesforce-card-case,
+	.illustration-salesforce-card-account { height: 125px; }
+
+	.illustration-salesforce-card-contact,
+	.illustration-salesforce-card-case { top: 361px; }
+
+	.illustration-salesforce-card-file,
+	.illustration-salesforce-card-account { top: 504px; }
+
+	.illustration-salesforce-phone-3 {
+		height: 493px;
+		left: 277px;
+		top: 89px;
+		width: 232px;
+		z-index: 3;
+	}
+
+	/*.illustration-salesforce-phone-screens {
+		height: 323px;
+		left: -79px;
+		top: 174px;
+		width: 948px;
+		z-index: 1;
+	}*/
+
+	.illustration-salesforce-phone-screen-inner-left,
+	.illustration-salesforce-phone-screen-inner-right,
+	.illustration-salesforce-phone-screen-outer-left,
+	.illustration-salesforce-phone-screen-outer-right {
+		height: 323px;
+		top: 174px;
+	}
+
+	.illustration-salesforce-phone-screen-inner-left {
+		left: 92px;
+		width: 189px;
+		z-index: 2;
+	}
+
+	.illustration-salesforce-phone-screen-inner-right {
+		right: 92px;
+		width: 190px;
+		z-index: 2;
+	}
+
+	.illustration-salesforce-phone-screen-outer-left {
+		left: -98px;
+		width: 190px;
+		z-index: 1;
+	}
+
+	.illustration-salesforce-phone-screen-outer-right {
+		right: -96px;
+		width: 188px;
+		z-index: 1;
+	}
+
+	.logos-salesforce-corporate { margin-top: 54px; }
+
+		.logos-salesforce-corporate img {
+			display: block;
+			width: 100%;
+		}
+
+	/* salesforce masthead */
+
+	.masthead-salesforce-clouds-container {
+		height: 428px;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+		.masthead-salesforce-clouds {
+			/*background-color: green;*/
+			height: 428px;
+			/*margin-left: -50%;*/
+			position: relative;
+			width: 2640px;
+			z-index: 2;
+		}
+
+			.cloud-set-primary,
+			.cloud-set-secondary {
+				display: block;
+				float: left;
+				margin-left: -113px;
+				width: 1320px;
+			}
+
+			.cloud-set-primary {
+				/*background-color: red;*/
+				-webkit-animation: moveClouds 60s linear infinite;
+				-moz-animation: moveClouds 60s linear infinite;
+				animation: moveClouds 60s linear infinite;
+			}
+
+			.touch .cloud-set-primary {
+				-webkit-animation: none;
+				-moz-animation: none;
+				animation: none;
+			}
+
+			/*.cloud-set-secondary { display: none; }*/
+
+	.masthead-salesforce-devices-container {
+		height: 100%;
+		left: 50%;
+		margin-left: -443px;
+		max-width: 885px;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+		.masthead-salesforce-devices-container img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+
+		.masthead-salesforce-devices,
+		.masthead-salesforce-devices-background {
+			height: 100%;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 3;
+		}
+
+		.masthead-salesforce-devices-background { z-index: 1; }
+
+	/* project-screenshot */
+
+	.project-screenshot { margin: 48px 0 58px; }
+
+		.project-screenshot img {
+			height: auto;
+			width: 100%;
+		}
+
+		.project-screenshot-caption {
+			color: #393f4e;
+			line-height: 1;
+			margin: 8px 0 0;
+		}
+
+		.section-freelance-roundingwell .project-screenshot-caption { color: #ebeef0; }
+
+		.section-dark .project-screenshot-caption,
+		.section-paramore-isc .project-screenshot-caption { color: #fff; }
+
+			.project-screenshot-caption small { font-size: 13px; }
+
+/* footer */
+
+#footer > .container-inner { height: 755px; }
+
+	#footer blockquote {
+		position: relative;
+		top: 265px;
+	}
+
+	.footer-content {
+		position: relative;
+		top: 341px;
+	}
+
+		.footer-content p {
+			float: left;
+			margin: 0 6.3291139% 0 0; /* 50 ÷ 790 */
+			width: 29.113924%; /* 230 ÷ 790 */
+		}
+
+		.footer-content p:last-child { margin-right: 0; }
+
+		.footer-content p.last-child { margin-right: 0; }
+
+/**
+ * ---------------------------------------------------------------------------
+ * 7. tablet styles
+ * ---------------------------------------------------------------------------
+ */
+
+@media only screen and (max-width: 946px) {
+
+	/*body:after { content: "Tablet"; }*/
+
+	.animate-fade-in {
+		-webkit-animation: none;
+		-moz-animation: none;
+		animation: none;
+	}
+
+	.container-inner {
+		max-width: none;
+		padding: 0 30px;
+		width: auto;
+	}
+
+	.ico-navigation { position: absolute; }
+
+	.ico-navigation.ico-navigation-close {
+		left: 40px;
+		top: 39px;
+	}
+
+	.navigation > .container-inner { width: auto; }
+
+	.section-content.js-can-fade {
+		opacity: 1;
+		-webkit-transition: none;
+		-moz-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
+
+	.map img { max-width: none; }
+
+	/*.section-home-salesforce { padding: 126px 0 106px; }
+	.section-home-paramore { padding: 129px 0 139px; }
+	.section-home-freelance { padding: 108px 0 108px; }*/
+
+	.section-home-salesforce,
+	.section-home-paramore,
+	.section-home-freelance { padding: 108px 0; }
+
+	.section-home-paramore { padding-bottom: 104px; }
+
+	.section-content-freelance { margin-top: 50px; }
+
+	.illustration-group .illustration-group-image { display: block; }
+
+	/* MOVED TO TABLET SMALL */
+	.illustration-group {
+		float: left;
+		height: auto;
+		overflow: visible;
+		right: auto;
+		position: relative;
+		top: auto;
+		width: 48%;
+	}
+
+		.illustration-group img {
+			position: relative;
+			width: 100%;
+		}
+
+	/* salesforce-page */
+
+	/*.salesforce-page .illustration-group {
+		float: left;
+		height: auto;
+		overflow: visible;
+		right: auto;
+		position: relative;
+		top: auto;
+		width: 48%;
+	}
+
+		.salesforce-page .illustration-group img {
+			position: relative;
+			width: 100%;
+		}*/
+
+		/* MOVED TO TABLET SMALL */
+		.salesforce-page .section-salesforce-apps .illustration-group,
+		.salesforce-page .section-salesforce-content .illustration-group,
+		.salesforce-page .section-salesforce-companies .illustration-group {
+			float: none;
+			width: 100%;
+		}
+
+		.salesforce-page .section {
+			height: auto;
+			padding: 60px 0 38px;
+		}
+
+			.salesforce-page .section .section-content { padding-top: 45px; }
+
+			.salesforce-page .section-text-left .section-content { float: right; }
+
+			.section-salesforce-apps .project-screenshot-caption {
+				bottom: auto;
+				font-size: 15px;
+				line-height: inherit;
+				margin: inherit;
+				position: relative;
+			}
+
+	.illustration-group-photoshop { right: 24px; }
+
+	.freelance-page .masthead,
+	.salesforce-page .masthead,
+	.paramore-page .masthead { min-height: 0; }
+
+	.freelance-page .masthead {
+		padding: 0 30px;
+		width: auto;
+	}
+
+		.no-touch .freelance-coffee {
+			-webkit-animation: none;
+			-moz-animation: none;
+			animation: none;
+		}
+
+	.paramore-page .masthead {
+		padding: 0 28px;
+		width: auto;
+	}
+
+	.masthead-paramore-browsers-container {
+		height: auto;
+		max-width: none;
+		position: relative;
+		width: 100%;
+	}
+
+		.browser-center { width: 60.351563%; } /* 618px ÷ 1024px */
+
+		.browser-left,
+		.browser-right { width: 23.144531%; }  /* 237px ÷ 1024px */
+
+		.browser-center,
+		.browser-left,
+		.browser-right {
+			-webkit-animation: none;
+			-moz-animation: none;
+			animation: none;
+		}
+
+		.browser-left { left: 2px; }
+
+		.browser-right { right: 2px; }
+
+	.masthead-salesforce-clouds-container {
+		height: auto;
+		position: absolute;
+		width: 100%;
+	}
+
+		.masthead-salesforce-clouds {
+			height: 100%;
+			width: 100%;
+		}
+
+			.cloud-set-primary {
+				-webkit-animation: none;
+				-moz-animation: none;
+				animation: none;
+				float: none;
+				margin-left: -50px;
+				width: 100%;
+			}
+
+			.cloud-set-secondary { display: none; }
+
+	.masthead-salesforce-devices-container {
+		height: auto;
+		left: 0;
+		margin: 0 auto;
+		max-width: none;
+		position: relative;
+		top: 0;
+		width: 83.125%; /* (320 - 60) ÷ 320 */
+	}
+
+		.masthead-salesforce-devices,
+		.masthead-salesforce-devices-background {
+			height: 100%;
+			width: 100%;
+		}
+
+		.masthead-salesforce-devices { position: relative; }
+
+	.section-salesforce-apps p,
+	.section-salesforce-content p {
+		line-height: inherit;
+		margin: 1em 0;
+		width: auto;
+	}
+
+	.salesforce-log-in-form {
+		background-color: #f5f5f5;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		bottom: 0;
+		height: 130px;
+		left: 50%;
+		margin-left: -146.5px;
+		padding: 29px 28px 0;
+		position: absolute;
+		width: 169px;
+		z-index: 4;
+	}
+
+	.footer-content {
+		margin: 0;
+		padding-bottom: 75px;
+	}
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * 8. tablet small styles
+ * ---------------------------------------------------------------------------
+ */
+
+@media only screen and (max-width: 747px) {
+
+	/*body:after { content: "Tablet Small"; }*/
+
+	.navigation-masthead { display: none; }
+
+	.map-location-info-inline { margin-top: 36px; }
+
+	.section-home-salesforce,
+	.section-home-freelance { padding: 42px 0 44px; }
+
+		.section-home-salesforce .illustration-group-image,
+		.section-home-freelance .illustration-group-image { margin-bottom: 36px; }
+
+	.section-home-paramore { padding: 44px 0; }
+
+		.section-home-paramore .illustration-group-image { margin-bottom: 40px; }
+
+	.section-text-left .section-content,
+	.section-text-right .section-content { float: right; }
+
+	/* MOVED FROM TABLET */
+	/*.illustration-group {
+		float: left;
+		height: auto;
+		overflow: visible;
+		right: auto;
+		position: relative;
+		top: auto;
+		width: 48%;
+	}
+
+		.illustration-group img {
+			position: relative;
+			width: 100%;
+		}*/
+
+	/* MOVED FROM TABLET */
+	/*.salesforce-page .section-salesforce-apps .illustration-group,
+	.salesforce-page .section-salesforce-content .illustration-group,
+	.salesforce-page .section-salesforce-companies .illustration-group {
+		float: none;
+		width: 100%;
+	}*/
+
+	/*.section-salesforce,
+	.section-freelance { padding: 42px 0 44px; }
+
+		.section-salesforce .illustration-group-image,
+		.section-freelance .illustration-group-image { margin-bottom: 36px; }
+
+	.section-paramore { padding: 44px 0; }
+
+		.section-paramore .illustration-group-image { margin-bottom: 40px; }
+
+	.section-text-left .section-content,
+	.section-text-right .section-content {
+		float: none;
+		padding: 36px 0 0;
+		width: auto;
+	}
+
+	.illustration-group {
+		height: auto;
+		overflow: visible;
+		right: auto;
+		position: relative;
+		top: auto;
+		width: 100%;
+	}
+
+		.illustration-group img {
+			position: relative;
+			width: 100%;
+		}
+
+	.section-home-salesforce,
+	.section-home-paramore,
+	.section-home-freelance { padding: 60px 0; }
+
+	.freelance-page .section {
+		height: auto;
+		padding: 56px 0 0;
+	}
+
+	.paramore-page .section {
+		height: auto;
+		padding: 56px 0 0;
+	}
+
+	.screenshot-group-frist-modules .project-screenshot-caption {
+		bottom: auto;
+		left: auto;
+		position: relative;
+	}
+
+	.salesforce-page .section-alternate { background-color: #ebeff2; }
+
+	.salesforce-page .section {
+		height: auto;
+		padding: 60px 0 38px;
+	}
+
+		.salesforce-page .section .section-content { padding-top: 45px; }
+
+		.section-salesforce-apps .project-screenshot-caption {
+			bottom: auto;
+			font-size: 15px;
+			line-height: inherit;
+			margin: inherit;
+			position: relative;
+		}*/
+
+	.freelance-page .section,
+	.paramore-page .section {
+		height: auto;
+		padding: 56px 0 0;
+	}
+
+	.screenshot-group-frist-modules .project-screenshot-caption {
+		bottom: auto;
+		left: auto;
+		position: relative;
+	}
+
+	/*.salesforce-page .section-alternate { background-color: #ebeff2; }*/
+
+	.salesforce-page .section {
+		height: auto;
+		padding: 60px 0 38px;
+	}
+
+		.salesforce-page .section .section-content { padding-top: 45px; }
+
+		.salesforce-page .section-salesforce-collaboration .section-content,
+		.salesforce-page .section-salesforce-files .section-content { padding-top: 0; }
+
+		.section-salesforce-apps .project-screenshot-caption {
+			bottom: auto;
+			font-size: 15px;
+			line-height: inherit;
+			margin: inherit;
+			position: relative;
+		}
+
+	#footer { height: auto; }
+
+		#footer blockquote {}
+
+			.footer-content p {
+				float: none;
+				margin: 0 0 20px;
+				width: auto;
+			}
+
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * 9. mobile styles
+ * ---------------------------------------------------------------------------
+ */
+
+@media only screen and (max-width: 639px) {
+
+	/*body:after { content: "Mobile"; }*/
+
+	.avatar {
+		height: 100px;
+		width: 100px;
+	}
+
+	.navigation p {
+		font-size: 22px;
+		letter-spacing: 0;
+		margin: 32px 0 0;
+	}
+
+	.navigation ul { margin-top: 45px; }
+
+	.navigation li { margin-bottom: 40px; }
+
+	.navigation a { font-size: 30px; }
+
+		.navigation a em { font-size: 16px; }
+
+	.map { padding-bottom: 56px; }
+
+	.illustration-coffee-swirl {
+		left: 5.2%;
+		width: 17.002195% !important;
+	}
+
+	.section-introduction > .container-inner {
+		padding-bottom: 46px;
+		padding-top: 47px;
+	}
+
+	.section-introduction p {
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.section-description {
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * 10. mobile small styles
+ * ---------------------------------------------------------------------------
+ */
+
+@media only screen and (max-width: 510px) {
+
+	/*body:after { content: "Mobile Small"; }*/
+
+	.ico-navigation {
+		left: 20px;
+		top: 20px;
+	}
+
+	.ico-navigation.ico-navigation-close {
+		left: 20px;
+		top: 19px;
+	}
+
+	.icon-brad,
+	.icon-top { top: 58px; }
+
+	.header-title { padding: 176px 0 20px; }
+
+		.header-title h2 { font-size: 50px; }
+
+		.header-title p { line-height: 1.3; }
+
+	.navigation-main li {
+		float: none;
+		width: auto;
+	}
+
+	.navigation-social { width: 228px; }
+
+		.navigation-social li { margin-right: 37px; }
+
+	.map-location-info {
+		box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+		margin-left: -43.75% !important;
+		left: 50% !important;
+		max-width: none !important;
+		width: 87.5% !important; /* (320 - 40) ÷ 320 */
+	}
+
+	.tooltipster-arrow { display: none !important; }
+
+	.section-text-left .section-content,
+	.section-text-right .section-content,
+	.salesforce-page .section-text-left .section-content {
+		float: none;
+		padding: 36px 0 0;
+		width: auto;
+	}
+
+	.illustration-group,
+	.salesforce-page .illustration-group {
+		float: none;
+		width: 100%;
+	}
+
+	.salesforce-page .section-salesforce-collaboration .section-content,
+	.salesforce-page .section-salesforce-files .section-content { padding-top: 45px; }
+
+	.masthead-salesforce-devices-container.hidden-mobile { display: none; }
+
+	.salesforce-log-in-form {
+		bottom: 0;
+		left: auto;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	#footer blockquote { top: 201px; }
+
+	#footer blockquote p {
+		font-size: 34px;
+		line-height: 1.1;
+	}
+
+	.footer-content {
+		padding-bottom: 31px;
+		top: 250px;
+	}
+
+}
+
+/**
+ * ---------------------------------------------------------------------------
+ * 11. helper classes
+ * ---------------------------------------------------------------------------
+ */
+
+/* image replacement */
+
+.ir {
+	/*background-color: transparent;*/
+	background-repeat: no-repeat;
+	border: 0;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+/* contain floats */
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after { clear: both; }
+
+.cf { *zoom: 1; }
+
+/* hidden elements */
+
+/*
+	hidden: 			Hide from both screenreaders and browsers: h5bp.com/u
+	invisible: 			Hide visually and from screenreaders, but maintain layout
+	visuallyhidden: 	Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+
+.hide-overflow-body {
+	margin-left: -15px;
+	overflow: hidden;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.invisible { visibility: hidden; }
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/* floated elements */
+
+.left,
+.right,
+.clear { position: relative; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+.clear { clear: both; }
+
+/* text styles */
+
+.bold { font-weight: bold; }
+
+.italic { font-style: italic; }
+
+.uppercase { text-transform: uppercase; }
+
+.align-left { text-align: left; }
+
+.align-right { text-align: right; }
+
+.align-center { text-align: center; }
+
+/* block styles */
+
+.block-center { margin: 0 auto; }
+
+/* resets */
+
+.reset {
+	margin: 0;
+	padding: 0;
+}
+
+.reset-list { list-style: none; }
+
+/**
+ * ---------------------------------------------------------------------------
+ * 12. print styles
+ * ---------------------------------------------------------------------------
+ */
+
+@media print {
+
+	* {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster: h5bp.com/s */
+		box-shadow:none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited { text-decoration: underline; }
+
+	a[href]:after { content: " (" attr(href) ")"; }
+
+	abbr[title]:after { content: " (" attr(title) ")"; }
+
+	.ir a:after,
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after { content: ""; } /* Don't show links for images, or javascript/internal links */
+
+	pre,
+	blockquote { border: 1px solid #999; page-break-inside: avoid; }
+
+	thead { display: table-header-group; } /* h5bp.com/t */
+
+	tr,
+	img { page-break-inside: avoid; }
+
+	img { max-width: 100% !important; }
+
+	@page { margin: 0.5cm; }
+
+	p,
+	h2,
+	h3 { orphans: 3; widows: 3; }
+
+	h2,
+	h3 { page-break-after: avoid; }
+
+}
